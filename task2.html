@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>html+css的练习</title>
+	<style type="text/css">
+		*{ border:none; padding:0; margin:0; font-family: "微软雅黑";}
+		#nav {width:84%; overflow:hidden; background: #eee; padding:0 8%;}
+		.logo { float:left; color:#444; line-height:50px; }
+		.nav_list { float:right; height:50px; line-height:50px; list-style: none;}
+
+		.nav_list li { float:left; padding-left:40px;}
+		.nav_list li a { color:#555; text-decoration: none;}
+		.banner { width:100%; }
+
+		/* ---------- news -------------- */
+		.news { float:left; width:40%; margin:30px 2% 0 8%; }
+		h2 { color:#222; }
+		.news_list { color:#444; padding: 10px 0 20px 0; }
+		.news_list li {  border-bottom: 1px dashed #ccc; line-height: 50px; overflow: hidden; height:50px;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			display: -moz-box;
+			-webkit-line-clamp:1;
+			-moz-line-clamp:1;
+			-o-line-clamp:1;
+			-ms-line-clamp:1;
+			-webkit-box-orient: vertical;
+			-moz-box-orient: vertical;
+			-o-box-orient: vertical;
+			-ms-box-orient: vertical;}
+
+		.news_list li:nth-of-type(1) { color:green; }
+		.news_list li a { display: block; color:#444; text-decoration: none; }
+		.news_list li:nth-of-type(1) a { color:green; }
+		.news_list li a .dot { font-weight: 800; padding-right:20px; }
+		.news_list li a:hover { color:red; }
+		.html { float:left; width:40%; margin:30px 8% 0 2%;} 
+
+		.CSS { clear:both; width:100%; padding-bottom:30px; background: #f7f7f7; }
+		.CSS  h2 { padding: 40px 8% 0; }
+		.box { width:84%; margin:20px 8% 0; }
+		.box caption { height:50px; line-height: 50px; color:blue; font-weight: bold; font-size: 18px}
+		.form_head { color:#444; line-height: 50px; text-align: center;}
+		.form_head tr { background: #ddd; }
+		.form_body { color:#444; line-height: 50px; text-align: center;}
+		.form_body tr:nth-of-type(2n) { background: #ddd; }
+
+		.mess_box { width: 84%; padding:30px 8%; }
+		.message { padding-left: 20%; padding-bottom:40px;}
+		.message form { width:100%; margin-top: 30px;}
+		.message form label span { padding-right:32px;}
+		.message form input { line-height: 24px; width: 200px; border: 1px solid #ddd; }
+		.message form select { width: 130px; background:transparent; height:26px; line-height: 24px; color:#444; border: #ddd solid 1px;}
+		.message form textarea {  width:80%; height:100px; margin-top:20px; border: 1px solid #ddd;} 
+		.foot { clear: both; width: 100%; height: 80px; background: #eee; border-top:2px solid #ddd;}
+		.foot p { text-align: center; line-height: 80px; color:#aaa; }
+	</style>
+</head>
+<body>
+	<header>
+		<nav id="nav">
+			<h1 class="logo">LOGO</h1>
+			<ul class="nav_list">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">HTML</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">JavaScript</a></li>
+				<li><a href="#">jQuery</a></li>
+				<li><a href="#">Ajax</a></li>
+			</ul>
+		</nav>
+		<img class="banner" src="http://ife.baidu.com/2017/asset/common/img/banner_c162049.jpg" />
+	</header>
+	<section class="news">
+		<header>
+			<h2>火爆新闻</h2>
+		</header>
+		<article>
+			
+			<ul class="news_list">
+				<li><a href="#"><span class="dot">·</span> 掌握常用HTML标签的含义、用法</a></li>
+				<li><a href="#"><span class="dot">·</span> 能够基于设计稿来合理规划HTML文档结构</a></li>
+				<li><a href="#"><span class="dot">·</span> 实践并掌握CSS的颜色、字体、背景、边框、盒模型、简单布局等样式的定义方式</a></li>
+				<li><a href="#"><span class="dot">·</span> 基于第一个任务“零基础HTML编码”的代码，参考 示例图（点击查看），在步骤一的代码基础上增加CSS样式代码的编写</a></li>
+				<li><a href="#"><span class="dot">·</span> 掌握常用HTML标签的含义、用法</a></li>
+			</ul>
+	</article>
+	
+	</section>
+	<section class="html">
+		<header>
+			<h2>HTML</h2>
+		</header>
+		
+		<article>
+			<ul class="news_list">
+				<li><a href="#"><span class="dot">·</span> 掌握常用HTML标签的含义、用法</a></li>
+				<li><a href="#"><span class="dot">·</span> 能够基于设计稿来合理规划HTML文档结构</a></li>
+				<li><a href="#"><span class="dot">·</span> 实践并掌握CSS的颜色、字体、背景、边框、盒模型、简单布局等样式的定义方式</a></li>
+				<li><a href="#"><span class="dot">·</span> 基于第一个任务“零基础HTML编码”的代码，参考 示例图（点击查看），在步骤一的代码基础上增加CSS样式代码的编写</a></li>
+				<li><a href="#"><span class="dot">·</span> 掌握常用HTML标签的含义、用法</a></li>
+			</ul>
+		</article>
+	</section>
+	<section class="CSS">
+		<header>
+			<h2>CSS</h2>
+		</header>
+		
+		<article>
+			<table class="box" cellspacing="0">
+				<caption>CSS的基本课程</caption>
+				<thead class="form_head">
+					<tr>
+						<td>属性</td>
+						<td>属性</td>
+						<td>属性</td>
+						<td>属性</td>
+					</tr>
+				</thead>
+				<tbody class="form_body">
+					<tr>
+						<td>MDN HTML入门</td>
+						<td>MDN HTML入门</td>
+						<td>MDN HTML入门</td>
+						<td>MDN HTML入门</td>
+					</tr>
+					<tr>
+						<td>MDN HTML入门</td>
+						<td>MDN HTML入门</td>
+						<td>MDN HTML入门</td>
+						<td>MDN HTML入门</td>
+					</tr>
+					<tr>
+						<td>MDN HTML入门</td>
+						<td>MDN HTML入门</td>
+						<td>MDN HTML入门</td>
+						<td>MDN HTML入门</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+	</section>
+	<section class="mess_box">
+		<header>
+			<h3>留言板</h3>
+		</header>
+		<section class="message">
+			<form>
+				<label><span>姓</span>名：</label>
+				<input type="text" name="姓名">
+			</form>
+			<form>
+				<label>手机号码：</label>
+				<input type="text" name="姓名">
+			</form>
+			<form>
+				<label><span>住</span>址：</label>
+				<select>
+					<option>省份</option>
+				</select>
+				<select>
+					<option>市</option>
+				</select>
+				<input type="text" name="">
+
+			</form>
+			<form>
+				<label style="padding-right: 30%;">我要留言：</label>
+				<textarea placeholder="我要说的"></textarea>
+			</form>
+				
+				
+			
+		</section>
+		
+	</section>
+	<footer class="foot">
+		<p>2018copy ©huinhg lliuhhgjg</p>
+	</footer>
+</body>
+</html>
